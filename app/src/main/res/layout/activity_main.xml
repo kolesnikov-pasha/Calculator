@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/expression"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:gravity="end|center_vertical"
+        android:singleLine="true"
+        android:ellipsize="start"
+        android:textColor="@android:color/black"
+        android:textSize="44sp" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/left_brace"
+                style="@style/ActionButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="(" />
+
+            <TextView
+                android:id="@+id/right_brace"
+                style="@style/ActionButtonStyle"
+                android:layout_height="wrap_content"
+                android:text=")" />
+
+            <TextView
+                android:id="@+id/divide"
+                style="@style/ActionButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="÷" />
+
+            <TextView
+                android:id="@+id/backspace"
+                style="@style/ActionButtonStyle"
+                android:layout_height="match_parent"
+                android:text="DEL" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/b7"
+                style="@style/BaseButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/b8"
+                style="@style/BaseButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/b9"
+                style="@style/BaseButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/multiply"
+                style="@style/ActionButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="×" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/b4"
+                style="@style/BaseButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/b5"
+                style="@style/BaseButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/b6"
+                style="@style/BaseButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/minus"
+                style="@style/ActionButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/b1"
+                style="@style/BaseButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/b2"
+                style="@style/BaseButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/b3"
+                style="@style/BaseButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/plus"
+                style="@style/ActionButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/b00"
+                style="@style/BaseButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/b0"
+                style="@style/BaseButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/comma"
+                style="@style/BaseButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="," />
+
+            <TextView
+                android:id="@+id/equals"
+                style="@style/EqualButtonStyle"
+                android:text="=" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

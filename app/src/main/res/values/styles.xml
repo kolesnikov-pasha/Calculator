@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseButtonStyle" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="ActionButtonStyle" parent="BaseButtonStyle">
+        <item name="android:backgroundTint">#C4EEBD</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="EqualButtonStyle" parent="ActionButtonStyle">
+        <item name="android:backgroundTint">#9BDE8F</item>
+    </style>
+</resources>
